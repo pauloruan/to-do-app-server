@@ -24,4 +24,11 @@ export class UserService {
     });
     return { id: createUser.id } as any;
   }
+
+  async findAll(): Promise<any> {
+    const allUsers = await this.prisma.user.findMany({
+      select: { id: true, email: true },
+    });
+    return allUsers;
+  }
 }
