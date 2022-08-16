@@ -43,4 +43,13 @@ export class TaskService {
     });
     return taskUpdated;
   }
+
+  async remove(id: number) {
+    await this.prisma.task.delete({
+      where: {
+        id,
+      },
+    });
+    return { message: 'Task removed' };
+  }
 }
