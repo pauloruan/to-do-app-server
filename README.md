@@ -1,73 +1,33 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# To Do App Server
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+✅ Aplicação para criar uma lista de tarefas.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+![Last-Commit](https://img.shields.io/github/last-commit/pauloruan/to-do-app-server?style=for-the-badge)
 
-## Description
+![Top-Language](https://img.shields.io/github/languages/top/pauloruan/to-do-app-server?style=for-the-badge)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Sobre o projeto
 
-## Installation
+O projeto consiste em um servidor que irá criar uma lista de tarefas.
+As tarefas serão criadas, editadas e excluidas apenas pelo usuário que criou a tarefa.
 
-```bash
-$ npm install
-```
+## Construido com
 
-## Running the app
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
 
-```bash
-# development
-$ npm run start
+A aplicação foi construida com o framework NestJS. Uma ferramenta para construção de aplicações web modernas e escaláveis do lado do servidor.
 
-# watch mode
-$ npm run start:dev
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
-# production mode
-$ npm run start:prod
-```
+Para a autenticação do usuário, foi utilizado o JWT. O JWT é uma forma de autenticação que permite ao usuário autenticar-se e obter um token de acesso.
 
-## Test
+![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 
-```bash
-# unit tests
-$ npm run test
+A aplicação foi documentada com o Swagger. Uma excelente ferramenta para documentar APIs, além de facilitar a manutenção do código tem uma fácil integração com o NestJS.
 
-# e2e tests
-$ npm run test:e2e
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+ORM para acesso ao banco de dados, Prisma além de ser uma farramenta de fácil escrita, tem uma fácil integração com o TypeScript.
 
-# test coverage
-$ npm run test:cov
-```
+## Autor
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+pr. - [@piardot](https://twitter.com/piardot) - [paulo-ruan@outlook.com](mailto:paulo-ruan@outlook.com)
