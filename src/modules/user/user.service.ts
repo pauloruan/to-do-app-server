@@ -4,6 +4,7 @@ import { MessagesHelper } from 'src/helpers/messages.helper';
 import { v4 as uuidv4 } from 'uuid';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateUserDto } from './dto/create-user.dto';
+import { User } from './entities/user.entity';
 
 @Injectable()
 export class UserService {
@@ -48,6 +49,18 @@ export class UserService {
     } catch (error) {
       throw new HttpException(
         MessagesHelper.USERS_NOT_FOUND,
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+  }
+
+  async findByEmail(email: string): Promise<User> {
+    try {
+      const user = this.prisma.user.findUnique({ where: { email } });
+      return user;
+    } catch (error) {
+      throw new HttpException(
+        MessagesHelper.USER_NOT_FOUND,
         HttpStatus.BAD_REQUEST,
       );
     }
