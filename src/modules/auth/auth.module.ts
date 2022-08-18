@@ -18,7 +18,7 @@ import { LocalStrategy } from './strategies/local.strategy';
     TaskModule,
     PassportModule,
     JwtModule.register({
-      privateKey: 'DSZbe0VxDJBf0TMkUhHfQg0Dz5+u/WI+8KVevL6PuoE=',
+      privateKey: process.env.JWT_SECRET_KEY || '@secret',
       signOptions: { expiresIn: '30d' },
     }),
   ],
