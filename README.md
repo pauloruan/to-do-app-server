@@ -9,13 +9,13 @@
 ## Sobre o projeto
 
 O projeto consiste em um servidor que irá criar uma lista de tarefas.
-As tarefas serão criadas, editadas e excluidas apenas pelo usuário que criou a tarefa.
+As tarefas serão criadas, editadas e excluídas apenas pelo usuário que criou a tarefa.
 
-## Construido com
+## Construído com
 
 ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
 
-A aplicação foi construida com o framework NestJS. Uma ferramenta para construção de aplicações web modernas e escaláveis do lado do servidor.
+A aplicação foi construída com o framework NestJS. Uma ferramenta para construção de aplicações web modernas e escaláveis do lado do servidor.
 
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
