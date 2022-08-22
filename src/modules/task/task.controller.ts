@@ -26,8 +26,8 @@ export class TaskController {
   }
 
   @Get()
-  findAll() {
-    return this.taskService.findAll();
+  findAll(@Body() userId: string) {
+    return this.taskService.findAll(userId);
   }
 
   @Patch('/:id')

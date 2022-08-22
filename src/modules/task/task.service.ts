@@ -38,9 +38,9 @@ export class TaskService {
     }
   }
 
-  async findAll(): Promise<Task[]> {
+  async findAll(userId: string): Promise<Task[]> {
     try {
-      const tasks = await this.prisma.task.findMany();
+      const tasks = await this.prisma.task.findMany({ where: { userId } });
       return tasks;
     } catch (error) {
       throw new HttpException(
