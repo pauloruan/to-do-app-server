@@ -2,8 +2,8 @@ import { ApiProperty } from '@nestjs/swagger';
 import {
   IsBoolean,
   IsNotEmpty,
+  IsNumber,
   IsString,
-  IsUUID,
   MinLength,
 } from 'class-validator';
 import { Task } from '../entities/task.entity';
@@ -16,7 +16,7 @@ export class UpdateTaskDto extends Task {
     description: 'Nome da tarefa editada pelo usuário.',
     example: 'Respeitar Januário',
   })
-  name: string;
+  title: string;
 
   @IsNotEmpty()
   @IsBoolean()
@@ -28,12 +28,11 @@ export class UpdateTaskDto extends Task {
   done: boolean;
 
   @IsNotEmpty()
-  @IsString()
-  @IsUUID()
+  @IsNumber()
   @ApiProperty({
     description:
       'ID do usuário que criou a tarefa. O ID do usuário é obtido ao fazer cadastro no sistema.',
-    example: '12345678-1234-1234-1234-1234567890ab',
+    example: '13',
   })
-  userId: string;
+  userId: number;
 }
