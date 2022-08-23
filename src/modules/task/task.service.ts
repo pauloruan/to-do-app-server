@@ -38,7 +38,7 @@ export class TaskService {
     }
   }
 
-  async findAll(userId: string): Promise<Task[]> {
+  async findAll(userId: number): Promise<Task[]> {
     try {
       const tasks = await this.prisma.task.findMany({ where: { userId } });
       return tasks;
